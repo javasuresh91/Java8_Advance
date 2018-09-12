@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;EX001_DefaultAndStaticMethodInInterface&apos; to &apos;EX_001_DefaultAndStaticMethodInInterface&apos;&#x0D;&#x0A;- Original element: &apos;EX001_DefaultAndStaticMethodInInterface&apos;&#x0D;&#x0A;- Renamed element: &apos;EX001_DefaultAndStaticMethodInInterface&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;EX001_DefaultAndStaticMethodInInterface&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=EX001_DefaultAndStaticMethodInInterface" name="EX_001_DefaultAndStaticMethodInInterface" references="true" stamp="1536748757793" version="1.0"/>
+</session>

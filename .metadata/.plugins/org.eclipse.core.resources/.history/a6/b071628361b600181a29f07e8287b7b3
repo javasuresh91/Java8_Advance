@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.demo;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import com.demo.pojo.Student;
+
+/**
+ * @author Sravikumar
+ *
+ */
+public interface MyInterface {
+	
+	default public List<Student> sortStudent(List<Student> stu) {
+		Collections.sort(stu);
+	}
+
+}
