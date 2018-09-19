@@ -13,9 +13,9 @@ public class MapIteration {
 		map.put(2, new Student("Suresh", 10));
 		map.put(3, new Student("Su", 1));
 		map.put(1, new Student("Surt", 190));
-		
-		map.forEach((k,v)->{
-			System.out.println(k +"  "+v);
+
+		map.forEach((k, v) -> {
+			System.out.println(k + "  " + v);
 		});
 	}
 
