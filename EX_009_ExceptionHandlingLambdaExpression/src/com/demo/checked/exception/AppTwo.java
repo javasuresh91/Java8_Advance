@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class AppTwo {
-
 	public static void main(String[] args) {
 
 		List<Integer> numList = Arrays.asList(1, 6, 0, 90, 54, 23, 0);
@@ -20,7 +19,7 @@ public class AppTwo {
 			try {
 				excep.accept(i);
 			} catch (Exception e) {
-				// TODO: handle exception
+				System.out.println("Exception Exception");
 			}
 		};
 	}
