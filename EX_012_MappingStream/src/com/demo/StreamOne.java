@@ -10,7 +10,12 @@ import java.util.stream.Stream;
 import com.pojo.Detail;
 
 public class StreamOne {
-
+	/**
+	 * 
+	 * @Convert the Stream elements into another stream using special functions 
+	 * @map() - use to manipulate the stream elements and return in the desire type
+	 * @flatMap()
+	 */
 	public static void main(String[] args) {
 
 		List<String> list = new ArrayList<>();

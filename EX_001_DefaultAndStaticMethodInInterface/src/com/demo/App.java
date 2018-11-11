@@ -18,6 +18,8 @@ public class App {
 		
 		List<Integer> num = null;
 		inter.getMaxNum(num);
+		
+		
 
 	}
 

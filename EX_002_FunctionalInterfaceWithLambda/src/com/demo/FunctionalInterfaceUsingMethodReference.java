@@ -22,7 +22,6 @@ public class FunctionalInterfaceUsingMethodReference {
 
 			}
 		});
-
 		System.out.println("With Method Reference : ");
 		nameList.forEach(System.out::println);
 
