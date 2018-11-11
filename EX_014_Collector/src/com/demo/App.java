@@ -6,7 +6,11 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class App {
-
+/**
+ * 
+ * @collect is used to convert the Stream to Collection Object
+ * 
+ */
 	public static void main(String[] args) {
 		List<String> nameList = Arrays.asList("tyt", "sss", "wee");
 		List<String> convertedList = nameList.stream().map(element -> element.toUpperCase())

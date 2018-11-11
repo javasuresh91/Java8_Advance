@@ -15,10 +15,10 @@ public class StreamThree {
 		List<String> list = new ArrayList<>();
 
 		list.add("xxxx");
-		list.add("yyyyy");
+		list.add("suresh");
 		list.add("zzzzz");
 		list.add("uuuuu");
-		list.add("aaaaa");
+		list.add("erf");
 		list.add("yyyyy");
 		/**
 		 * Matching Operation
@@ -26,6 +26,10 @@ public class StreamThree {
 		boolean flagOne = list.stream().anyMatch(s -> s.equals("aaaaa"));
 		System.out.println("Using Any Match :" + flagOne);
 		flagOne = list.stream().anyMatch(s -> s.equals("aaa"));
+		System.out.println("Using Any Match :" + flagOne);
+		flagOne = list.stream().anyMatch(s -> s.contains("re"));
+		System.out.println("Using Any Match :" + flagOne);
+		flagOne = list.stream().anyMatch(s -> s.equals("re"));
 		System.out.println("Using Any Match :" + flagOne);
 
 		/**

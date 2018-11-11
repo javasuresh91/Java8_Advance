@@ -5,6 +5,14 @@ import java.util.List;
 
 import com.pojo.Student;
 
+/**
+ * 
+ * @Matching can be do in three ways and return the boolean value
+ * @All Match
+ * @Any Match
+ * @None Match
+ *
+ */
 public class MatchingStream {
 
 	public static void main(String[] args) {
@@ -23,16 +31,16 @@ public class MatchingStream {
 		boolean allMatchFlag = list.stream().allMatch(s -> {
 			return s.getName().contains("x");
 		});
-		System.out.println("Using All MAtch Features : " + allMatchFlag);
+		System.out.println("Using All Match Features : " + allMatchFlag);
 		;
 		System.out.println("---------------------------");
 		boolean anyMatchFlag = list.stream().anyMatch(s -> s.getAge() > 500);
-		System.out.println("Using Any MAtch Features : " + anyMatchFlag);
+		System.out.println("Using Any Match Features : " + anyMatchFlag);
 		;
 		System.out.println("---------------------------");
 
 		boolean nonMatchFlag = list.stream().noneMatch(s -> s.getAge() > 500);
-		System.out.println("Using None MAtch Features : " + nonMatchFlag);
+		System.out.println("Using None Match Features : " + nonMatchFlag);
 		;
 		System.out.println("---------------------------");
 	}
