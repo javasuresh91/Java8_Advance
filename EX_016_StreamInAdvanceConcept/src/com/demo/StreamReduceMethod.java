@@ -5,8 +5,10 @@ import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 /**
+ * @reduce() and collect() are the methods which is used for the reduction mechanism
+ * 
  * @Reduce Method is used Overloaded in three Different manner in the Stream
- *         Class.
+ *         Class, it a terminal operation.
  * @It uses terms like Identity,Accumulator and combiner as a arguments
  * @Identity has initial value or default value to accumulate
  * @Accumulator means, the logical expression which is used at every step of
