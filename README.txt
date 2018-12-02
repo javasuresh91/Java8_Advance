@@ -86,3 +86,24 @@ Collect
 		*Numerical operation like Summing,Averaging - averaging***() ,summarizing***(),summing***() and etc
 		*Grouping the Elelments - groupingBy(****) and etc
 		*Grouping the Elelments based on conditions - partitioningBy(***)	
+LocalDate
+	-Refer the EX_017_DateAPI.LocalDateAPI.java
+	-Period is a class used to manipulate the date, month and etc which is related only to the LocalDate Object
+	-ChronoUnit also do the same operation on the LocalDate Object
+	-For more Period and ChronoUnit Refer EX_017_DateAPI.LocalDateUsingPeriod.java
+LocalTime
+	-Refer the EX_017_DateAPI.LocalTimeAPI.java
+	-Duration is a class used to manipulate the Hours, mins and etc which isrealted only to the LocalTime object
+	-ChronoUnit also do the same operation on the LocalTime Object 
+	-For more Duration and ChronoUnit Refer EX_017_DateAPI.LocalTimeUsingDuration.java
+LocalDateTime
+	-It is Combination of LocalTime and Localdate API with lot of Factory and overlaoded methods to perform different Operation
+	-Refer the EX_017_DateAPI.LocalDateAndTimeAPI.java
+	-LocalDateTime.ofInstant(<Date/calendar object>,<ZoneId>) to convert the java.util.Date and java.util.Calendar object to java.Time.* object.
+	-By Converting we can extract the LocalDate and LocalTime.
+	-Refer the EX_017_DateAPI.CompatibilityOldDateAndCalender.java	
+	-DateTimeFormatter is used to format the date and time as custom format
+	-Refer the EX_017_DateAPI.DateAndTimeFormat.java	
+ZonedDateTime
+	-Refer the EX_017_DateAPI.ZonedDateTimeAPI.java
+	
