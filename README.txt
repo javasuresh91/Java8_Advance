@@ -106,4 +106,15 @@ LocalDateTime
 	-Refer the EX_017_DateAPI.DateAndTimeFormat.java	
 ZonedDateTime
 	-Refer the EX_017_DateAPI.ZonedDateTimeAPI.java
+Optioanl
+	-It used to handle the object which throws Null Pointer Exception(NPE).
+	-With this , we can write the code without error-prone boilerplate code and checking the object is null or not.
+	-Optional is container, which return the T(any Class Objects) object if the T oobject is not NULL. If the T is null it will do predefined operation instead of throwing NPE.
+	-Optional Instance is created by using empty(),of(**),ofNullable(**) and etc.., which is a static methods which can be accessed by Class name(Optional)
+	-With the help of Optioanl we can do lot of Operation of NULL objects by giving defalut value to the Object, handling the object and etc.
+	-Refer the EX_018_OptionalAPI
+Base64,Encoder,Decoder
+	-We can encode the basic,URL,MIME type of data and we can decode it again	
+	-Refer the EX_019_EncodingDecoding
+	
 	
