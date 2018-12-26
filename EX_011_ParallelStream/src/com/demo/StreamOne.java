@@ -6,6 +6,12 @@ import java.util.stream.Stream;
 
 import com.pojo.Student;
 
+/**
+ * 
+ * @Paralelly Execution of the stream can be achieved by EX_016_StreamInAdvanceConcept.StreamParallelizingAPI.java  
+ *
+ */
+
 public class StreamOne {
 
 	public static void main(String[] args) {

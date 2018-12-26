@@ -17,23 +17,32 @@ public class StreamOne {
 	public static void main(String[] args) {
 
 		/**
-		 * To Create a Stream one way
+		 * Empty Stream
 		 */
 		System.out.println("First Way");
+		Stream<Object> empty = Stream.empty();
+		System.out.println(empty);
+
+		/**
+		 * To Create a Stream one way
+		 */
+		System.out.println("\nSecond Way");
 		String[] arr = new String[] { "aa", "bb", "cc" };
-		Stream<String> stream = Arrays.stream(arr);
-		stream.forEach(System.out::println);
+		Stream<String> streamFull = Arrays.stream(arr);
+		Stream<String> streamPart = Arrays.stream(arr,1,3);
+		streamFull.forEach(System.out::println); // Output : aa,bb,cc
+		streamPart.forEach(System.out::println); // Output : bb,cc
 
 		/**
 		 * TO create a Stream two way
 		 */
-		System.out.println("\nSecond Way");
+		System.out.println("\nThird Way");
 		Stream<String> streamOf = Stream.of("aa", "bb", "cc");
 		streamOf.forEach(System.out::println);
 		/**
 		 * To Create a Stream in Third Way
 		 */
-		System.out.println("\nThird Way");
+		System.out.println("\nFourth way");
 		List<String> list = Arrays.asList("aa", "bb", "cc");
 		Stream<String> streamList = list.stream();
 		streamList.forEach(System.out::println);

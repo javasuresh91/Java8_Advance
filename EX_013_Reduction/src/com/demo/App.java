@@ -7,8 +7,10 @@ public class App {
 
 	/**
 	 * 
-	 * @Reduce is used to implement different functionality/behaviour on the base
+	 * @Reduce is used to implement different functionality/behavior on the base
 	 *         value/data
+	 *         
+	 * @Detail Usage of reduce() can be see in EX_016_StreamInAdvanceConcept        
 	 */
 	public static void main(String[] args) {
 		List<Integer> listInt = Arrays.asList(1, 2, 3);
