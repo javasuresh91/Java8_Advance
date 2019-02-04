@@ -116,5 +116,6 @@ Optioanl
 Base64,Encoder,Decoder
 	-We can encode the basic,URL,MIME type of data and we can decode it again	
 	-Refer the EX_019_EncodingDecoding
-	
+Functional Interface and its Default methods
+	-Refer EX_020_FuntionalInterfaces and EX_022_default-methods-funtional-interface 	 
 	
