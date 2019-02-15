@@ -152,4 +152,10 @@ Concurrency API
 			-Work-Stealing Algorithm means, the CPU which has idle processor will steal the task from the busy processor
 			-ForkJoin means, the single task is divided into multiple sub-task it is called as Fork and the result is returned by sub-task to it corresponding task it is called as Join
 			-Need to explore more
-	
+String Class Enhancements
+	-String Joiner
+		-It is a utility calsses which is used to perform action on the string, present in the util package.
+	-String Class
+		-It has some useful methods like join of overloaded methods
+		
+		
