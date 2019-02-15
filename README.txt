@@ -31,7 +31,7 @@ Method Reference
 This Keyword
 	-"This"	keyword is used to represent the current instance of a class or interface or Anonymous in java and also lambda is a another side of the interface so we can use "this" inside the lambda implementation in the non-static block.
 Exception 
-	//TODO
+	-Need to explore more
 Stream
 	-Creating a Stream in Five ways 
 	-1. Empty stream 
@@ -117,5 +117,39 @@ Base64,Encoder,Decoder
 	-We can encode the basic,URL,MIME type of data and we can decode it again	
 	-Refer the EX_019_EncodingDecoding
 Functional Interface and its Default methods
-	-Refer EX_020_FuntionalInterfaces and EX_022_default-methods-funtional-interface 	 
+	-Refer EX_020_FuntionalInterfaces and EX_022_default-methods-funtional-interface
+Concurrency API
+	-HashMap
+		-Is sync using sync methods in Collection, so it reduce the performance of the data structure
+		-Is not thread safe
+		-It is failfast
+	-ConcurrentHashMap(EX_023_Concurrency_Part_One)	
+		-Is Thread safe - fit for Multi-thread
+		-Is sync using bucket functionality
+		-It is failsafe
+		-Since Java 8
+			-Some pool methods are avaliable to perform ForkJoinPool
+			-Three kinds of Parallel Operation can be do  forEach,search,reduce
+			-Each of the operation is methos overloaded by keys,values and key-values as method arguments
+			-These all method will accept the first argument as parallelism-Threshold as a parameter.(paralle executor)
+	-Completable Future API(EX_024_Concurrency_Part_Two) 
+		-Future interface is added in java 5 to perform Asynchronous computation, but it does not have any method which supports for combine computation and handling errors
+		-CompletableFuture class is introduced in java 8, it implements Future and CompletionStage interface to handle all the drawback of Async computation.
+		-It has multiple static methods to create instance of CompletableFuture  like completabledFuture(),runAsync(), supplierAsync() and etc
+		-Processing Result of Completable Future
+			-Methods like thenApply(),thenAccept() and thenRun() will perform the operation on the result.
+		-Combining/Chaining the Completable Future
+			-thenCompose(),thenCombine() and thenAcceptBoth() will perform the chaining operation Future object
+		-Parallel Execution of Completable Future
+			-allOf() method uses of parallel
+		-Accumulator Classes(EX_025_Concurrency_Part_Three) 
+			-Need to explore  more
+		-ForkJoinPool (EX_026_Concurrency_Part_Four)
+			-This class is in JDK from 1.7
+			-But in 1.8 they have added some common pool methods in that
+			-which is used in the parallel Computing like Stream adn completableFuture
+			-ForkJoin implements the 'Work-Stealing Algorithm'(It ensure the no CPU is idle) to perform in the task in the seperate thread.
+			-Work-Stealing Algorithm means, the CPU which has idle processor will steal the task from the busy processor
+			-ForkJoin means, the single task is divided into multiple sub-task it is called as Fork and the result is returned by sub-task to it corresponding task it is called as Join
+			-Need to explore more
 	
