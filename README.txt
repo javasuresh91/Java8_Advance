@@ -157,5 +157,15 @@ String Class Enhancements
 		-It is a utility calsses which is used to perform action on the string, present in the util package.
 	-String Class
 		-It has some useful methods like join of overloaded methods
-		
+File Enhancement(EX_028_FileConcept)
+	-Files.list(<PATH_DIR>)	used to read the files and folders into the specific path 	
+	-Files.line(<PATH_DIR>), we can read the file content line by line and do operation like search,occurance, filter and etc
+	-Files.find(<Path>,<max_depth>,<mathcer>,<option>) used to search the file in a directory
+		-<Path> : path object of the Directory
+		-<max_depth> : How much depth need to go for the level of the directory search, INteger
+		-<mathcer> : based on the given condition the search will carry,BiPredicate
+		-<option> : it is vars arg. it is optional
+	-Files.readAllLine(<Path>,[<Charset>]) used to read the lines in the file
+	-Files.newBufferedReader(<Path>,[<Charset>])used to read the lines in the file, it will be some faster
+	-Files.write(..) used to write the content into the file
 		
