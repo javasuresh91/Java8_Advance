@@ -168,4 +168,16 @@ File Enhancement(EX_028_FileConcept)
 	-Files.readAllLine(<Path>,[<Charset>]) used to read the lines in the file
 	-Files.newBufferedReader(<Path>,[<Charset>])used to read the lines in the file, it will be some faster
 	-Files.write(..) used to write the content into the file
-		
+Compartor Enhnacement(EX_029_CompartorConcept)
+	-Before java7, We use to impletement the Compartor by 
+		1.Creating a class which implement the Comparator<T> with overrided method "compare(..)" and will use the instance of the class in the Collections.sort(<Collection Object>,<Compartor Object>)
+		2.We can have direct implementation by the anaymous inner class into the Collections.sort(<Collection Object>,<inner class implementation>)
+	-After java 8, we can use to implement by 
+		1.Lambda Expression without extra class or anaynous class
+		2.list.sort(<Comparator Object>), instead of Collections.sort(..) we can use the sort method in the list interface which accept the Comparator OBject itself
+		3.comparing method which is used to sort the object. it has overloaded method to perform the sorting function.This method is a static method which is present in the Compartor Interface itself, so we can access it directly by the Interface name
+		4.comparing method comes with the specific type of comparing like int,long and double. comapringInt(..),comapringLong(..) and comapringDouble(..)
+		5.thenComparing method is used to do sort the object as nested, for example the sorted order of the object will be the input for another sorting methodology.
+		6.naturalOrder comparing methods which allow to sort the object, which has its own sorting order implicitly.
+		7.nullFirst(..) and nulllast(..) used to sort the null values in the object.
+		8.reserve() method is used to get the reserve order of the sorted, so we need not to do any own logic for reverse order
