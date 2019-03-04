@@ -181,3 +181,6 @@ Compartor Enhnacement(EX_029_CompartorConcept)
 		6.naturalOrder comparing methods which allow to sort the object, which has its own sorting order implicitly.
 		7.nullFirst(..) and nulllast(..) used to sort the null values in the object.
 		8.reserve() method is used to get the reserve order of the sorted, so we need not to do any own logic for reverse order
+ThreadLocal(EX_030_ThreadLocal)
+	-It is an alternative for syncroized
+	-Need to explore more		
