@@ -183,4 +183,13 @@ Compartor Enhnacement(EX_029_CompartorConcept)
 		8.reserve() method is used to get the reserve order of the sorted, so we need not to do any own logic for reverse order
 ThreadLocal(EX_030_ThreadLocal)
 	-It is an alternative for syncroized
-	-Need to explore more		
+	-Need to explore more	
+Wrapper Class
+	-Integer, Long, Double,Float,Short, Byte and Boolean are the wrapper classes in java.
+	-In java 8, they added many static methods which will used to handle the singed and unsigned numbers with radix to do many basic operation like get hashCode and long value, max number ,minimum number, sum number and etc
+		-Signed number means Positive and negative number
+		-Unsigned number means Positive number
+		-radix means format of the number like binary(2),octal(8),hexa(16)
+	-These method will help to convert the <Wrapper/Primitive Class Type> to String and vise versa. 
+	-These method will take the radix as a one the input parameter and do the operation based on the situation.
+	
