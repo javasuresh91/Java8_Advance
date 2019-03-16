@@ -192,4 +192,25 @@ Wrapper Class
 		-radix means format of the number like binary(2),octal(8),hexa(16)
 	-These method will help to convert the <Wrapper/Primitive Class Type> to String and vise versa. 
 	-These method will take the radix as a one the input parameter and do the operation based on the situation.
+Math Class
+	-This is come with lot of static methods, which handles the Long and Float values and error handling
+Zip File Reading
+	-ZipFile,ZipEntry are the classes which is used to read the files and the its content in the Zip file.
+jdeps(Java Class Dependency analyzer)	
+	-This a tool which is used to see the dependency of a java class.
+	-This is present in the bin folder of the jdk folder of java installation
+	-We can access by cmd prompt(jdeps[options]classes)
+		options: commandLine options
+		classes : name of the class name or package name or fully qualified name
+	-It shows the package-level or class-level of the mentioned class	
+
+
+	
+	
+											"Need to explore more in java 8"	
+	1.Exception	
+	2.ForkJoinPool
+	3.ThreadLocal
+	4.jdeps
+	5.Permgen space	
 	
